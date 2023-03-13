@@ -4,3 +4,11 @@
 
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
+vim.g.python_host_prog = "/usr/bin/python"
+vim.g.python3_host_prog = "/usr/bin/python3"
+
+opt = vim.opt
+
+opt.wrap = true
+opt.timeoutlen = 1000
+opt.ttimeoutlen = 0
