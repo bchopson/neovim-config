@@ -15,4 +15,14 @@ return {
       { "<leader>tp", ":TestNearest --pdb<CR>", desc = "Test Nearest w/ Debug" },
     },
   },
+  {
+    "preservim/vimux",
+    -- keys = {
+    --   { "<leader>tq", ":VimuxCloseRunner<CR>", desc = "Close Test Pane" },
+    -- },
+    config = function()
+      vim.g["test#strategy"] = "vimux"
+      vim.g.VimuxHeight = "40"
+    end,
+  },
 }
