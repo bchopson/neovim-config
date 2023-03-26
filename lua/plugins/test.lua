@@ -14,15 +14,17 @@ return {
       { "<leader>tg", ":TestVisit<CR>", desc = "Test Suite" },
       { "<leader>tp", ":TestNearest --pdb<CR>", desc = "Test Nearest w/ Debug" },
     },
-  },
-  {
-    "preservim/vimux",
-    -- keys = {
-    --   { "<leader>tq", ":VimuxCloseRunner<CR>", desc = "Close Test Pane" },
-    -- },
-    config = function()
-      vim.g["test#strategy"] = "vimux"
-      vim.g.VimuxHeight = "40"
-    end,
+    dependencies = {
+      {
+        "preservim/vimux",
+        keys = {
+          { "<leader>tq", ":VimuxCloseRunner<CR>", desc = "Close Test Pane" },
+        },
+        config = function()
+          vim.g["test#strategy"] = "vimux"
+          vim.g.VimuxHeight = "40"
+        end,
+      },
+    },
   },
 }
