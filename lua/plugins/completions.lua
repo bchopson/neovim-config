@@ -16,6 +16,10 @@ return {
           c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
         }),
       })
+      opts.preselect = cmp.PreselectMode.None
+      opts.completion = {
+        completeopt = "noselect",
+      }
     end,
   },
 }

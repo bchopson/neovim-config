@@ -11,4 +11,12 @@ return {
       { "<leader>gr", ":Gread<CR>", desc = "Gread" },
     },
   },
+  {
+    -- GitHub
+    "tpope/vim-rhubarb",
+  },
+  {
+    -- Bitbucket
+    "tommcdo/vim-fubitive",
+  },
 }
