@@ -1,5 +1,10 @@
 return {
-  { "rebelot/kanagawa.nvim" },
+  {
+    "rebelot/kanagawa.nvim",
+    opts = {
+      transparent = true,
+    },
+  },
   { "savq/melange-nvim" },
   {
     "LazyVim/LazyVim",

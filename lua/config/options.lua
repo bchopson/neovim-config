@@ -12,3 +12,4 @@ opt = vim.opt
 opt.wrap = true
 opt.timeoutlen = 1000
 opt.ttimeoutlen = 0
+opt.relativenumber = false

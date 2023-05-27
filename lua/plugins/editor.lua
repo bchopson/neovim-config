@@ -4,4 +4,6 @@ return {
     main = "mini.bracketed",
     config = true,
   },
+  { "tpope/vim-abolish" },
+  { "PeterRincker/vim-argumentative" },
 }
