@@ -1,4 +1,5 @@
 return {
+  { "madox2/vim-ai" },
   {
     "echasnovski/mini.bracketed",
     main = "mini.bracketed",
