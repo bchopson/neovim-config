@@ -13,3 +13,6 @@ opt.wrap = true
 opt.timeoutlen = 1000
 opt.ttimeoutlen = 0
 opt.relativenumber = false
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevelstart = 99

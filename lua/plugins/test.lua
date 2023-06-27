@@ -11,7 +11,8 @@ return {
       { "<leader>tr", ":TestLast<CR>", desc = "Test Last" },
       { "<leader>tc", ":TestClass<CR>", desc = "Test Class" },
       { "<leader>tf", ":TestFile<CR>", desc = "Test File" },
-      { "<leader>tg", ":TestVisit<CR>", desc = "Test Suite" },
+      { "<leader>ta", ":TestSuite<CR>", desc = "Test Suite" },
+      { "<leader>tg", ":TestVisit<CR>", desc = "Test Visit" },
       { "<leader>tp", ":TestNearest --pdb<CR>", desc = "Test Nearest w/ Debug" },
     },
     dependencies = {
