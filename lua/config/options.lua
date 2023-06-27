@@ -4,8 +4,13 @@
 
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
-vim.g.python_host_prog = "/usr/bin/python"
-vim.g.python3_host_prog = "/usr/bin/python3"
+if jit.os == "Windows" then
+  vim.g.python_host_prog = [[C:\Users\benjamin\scoop\apps\python\current\python]]
+  vim.g.python3_host_prog = [[C:\Users\benjamin\scoop\apps\python\current\python]]
+else
+  vim.g.python_host_prog = "/usr/bin/python"
+  vim.g.python3_host_prog = "/usr/bin/python3"
+end
 
 opt = vim.opt
 

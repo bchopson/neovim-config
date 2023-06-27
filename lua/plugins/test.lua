@@ -18,6 +18,9 @@ return {
     dependencies = {
       {
         "preservim/vimux",
+        enabled = function()
+          return jit.os ~= "Windows"
+        end,
         keys = {
           { "<leader>tq", ":VimuxCloseRunner<CR>", desc = "Close Test Pane" },
         },
