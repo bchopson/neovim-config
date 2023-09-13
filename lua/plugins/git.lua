@@ -19,4 +19,5 @@ return {
     -- Bitbucket
     "tommcdo/vim-fubitive",
   },
+  { "AndrewRadev/diffurcate.vim" },
 }
