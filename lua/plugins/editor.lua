@@ -20,4 +20,7 @@ return {
       },
     },
   },
+  { "folke/zen-mode.nvim", keys = {
+    { "<leader>uz", ":ZenMode<CR>", desc = "Toggle Zen Mode" },
+  } },
 }
