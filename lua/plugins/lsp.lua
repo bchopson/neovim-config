@@ -12,12 +12,15 @@ return {
     },
   },
   {
-    "nvimtools/none-ls.nvim",
-    opts = function(_, opts)
-      local nls = require("null-ls")
-      vim.list_extend(opts.sources, { nls.builtins.formatting.black, nls.builtins.formatting.rustfmt })
-    end,
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        python = { "black" },
+        rust = { "rustfmt" },
+      },
+    },
   },
+  { "nvim-treesitter/nvim-treesitter-context", enabled = false },
   {
     "simrat39/symbols-outline.nvim",
     cmd = "SymbolsOutline",
