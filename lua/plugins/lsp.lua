@@ -8,6 +8,7 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
+        emmet_language_server = {},
       },
     },
   },
@@ -15,8 +16,11 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        python = { "black" },
+        python = { "ruff_format" },
+        -- python = { "black" },
         rust = { "rustfmt" },
+        typescriptreact = { "prettier" },
+        typescript = { "prettier" },
       },
     },
   },

@@ -11,6 +11,8 @@ return {
     },
   },
   { "savq/melange-nvim" },
+  { "miikanissi/modus-themes.nvim" },
+  { "vigoux/oak" },
   {
     "LazyVim/LazyVim",
     opts = {
