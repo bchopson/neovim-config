@@ -1,7 +1,5 @@
-require("which-key").register({
-  ["<leader>t"] = {
-    name = "+test",
-  },
+require("which-key").add({
+  { "<leader>t", group = "test" },
 })
 return {
   {
