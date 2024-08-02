@@ -21,3 +21,4 @@ opt.relativenumber = false
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevelstart = 99
+opt.guifont = { "JetBrainsMonoNL Nerd Font", ":h9" }

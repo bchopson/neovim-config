@@ -23,7 +23,11 @@ return {
           { "<leader>tq", ":VimuxCloseRunner<CR>", desc = "Close Test Pane" },
         },
         config = function()
-          vim.g["test#strategy"] = "vimux"
+          if jit.os ~= "Windows" then
+            vim.g["test#strategy"] = "neovim"
+          else
+            vim.g["test#strategy"] = "vimux"
+          end
           vim.g.VimuxHeight = "40"
         end,
       },
