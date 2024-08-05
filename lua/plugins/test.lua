@@ -28,7 +28,7 @@ return {
           else
             vim.g["test#strategy"] = "vimux"
           end
-          vim.g.VimuxHeight = "40"
+          vim.g.VimuxHeight = "40%"
         end,
       },
     },
