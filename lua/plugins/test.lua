@@ -24,9 +24,9 @@ return {
         },
         config = function()
           if jit.os ~= "Windows" then
-            vim.g["test#strategy"] = "neovim"
-          else
             vim.g["test#strategy"] = "vimux"
+          else
+            vim.g["test#strategy"] = "neovim"
           end
           vim.g.VimuxHeight = "40%"
         end,
