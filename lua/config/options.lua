@@ -10,6 +10,9 @@ if jit.os == "Windows" then
 else
   vim.g.python_host_prog = "/usr/bin/python"
   vim.g.python3_host_prog = "/usr/bin/python3"
+  -- Ensures mise shims are used
+  -- mise is Mac/Linux only at present
+  vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 end
 
 opt = vim.opt
