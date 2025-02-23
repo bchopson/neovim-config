@@ -13,6 +13,11 @@ return {
       { "<leader>tg", ":TestVisit<CR>", desc = "Test Visit" },
       { "<leader>tp", ":TestNearest --pdb<CR>", desc = "Test Nearest w/ Debug" },
     },
+    config = function()
+      if jit.os ~= "Windows" then
+        vim.g["test#python#pytest#executable"] = "mise exec -- pytest"
+      end
+    end,
     dependencies = {
       {
         "preservim/vimux",

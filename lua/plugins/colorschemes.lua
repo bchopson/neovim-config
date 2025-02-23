@@ -13,6 +13,7 @@ return {
   { "savq/melange-nvim" },
   { "miikanissi/modus-themes.nvim" },
   { "vigoux/oak" },
+  { "EdenEast/nightfox.nvim", opts = { options = { transparent = true, styles = { comments = "italic" } } } },
   {
     "LazyVim/LazyVim",
     opts = {
