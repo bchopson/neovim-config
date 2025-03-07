@@ -60,7 +60,6 @@
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
   "ts-comments.nvim": { "branch": "main", "commit": "1bd9d0ba1d8b336c3db50692ffd0955fe1bb9f0c" },
   "vim-abolish": { "branch": "master", "commit": "dcbfe065297d31823561ba787f51056c147aa682" },
-  "vim-ai": { "branch": "main", "commit": "430966fbf93bde9cefa3891be6127ae997e5d667" },
   "vim-argumentative": { "branch": "master", "commit": "63a5f7deb675c38126de626f4c00e000902462fe" },
   "vim-dadbod": { "branch": "master", "commit": "9f0ca8bcef704659820a95c3bbd2c262583a66a1" },
   "vim-dadbod-completion": { "branch": "master", "commit": "3f5783c12e184e4b6f05dfcbd7c1a6da05b4d66e" },

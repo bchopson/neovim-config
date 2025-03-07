@@ -2,7 +2,6 @@ require("which-key").add({
   { "<leader>z", group = "ai" },
 })
 return {
-  { "madox2/vim-ai" },
   {
     "augmentcode/augment.vim",
     lazy = false,
