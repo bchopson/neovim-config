@@ -6,7 +6,8 @@ return {
     "augmentcode/augment.vim",
     lazy = false,
     keys = {
-      { "<leader>zc", ":Augment chat<CR>", desc = "Augment Chat", mode = { "n", "v" } },
+      { "<leader>zc", ":Augment chat<CR>", desc = "Augment Chat", mode = { "n" } },
+      { "<leader>zc", ":'<'>Augment chat<CR>", desc = "Augment Chat", mode = { "v" } },
       { "<leader>zz", ":Augment chat-toggle<CR>", desc = "Toggle Augment Chat" },
     },
   },
