@@ -4,14 +4,11 @@ return {
   { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
   {
     "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
       format = { timeout_ms = 2000 },
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
         emmet_language_server = {},
+        typos_lsp = {},
       },
     },
   },
