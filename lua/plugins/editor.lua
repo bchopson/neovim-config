@@ -9,6 +9,7 @@ return {
       { "<leader>zc", ":Augment chat<CR>", desc = "Augment Chat", mode = { "n" } },
       { "<leader>zc", ":'<'>Augment chat<CR>", desc = "Augment Chat", mode = { "v" } },
       { "<leader>zz", ":Augment chat-toggle<CR>", desc = "Toggle Augment Chat" },
+      { "<leader>zn", ":Augment chat-new<CR>", desc = "New Augment Chat" },
     },
   },
   {

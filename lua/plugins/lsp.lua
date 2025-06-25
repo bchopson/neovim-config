@@ -6,6 +6,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       format = { timeout_ms = 2000 },
+      inlay_hints = { enabled = false },
       servers = {
         emmet_language_server = {},
         typos_lsp = {},
@@ -17,8 +18,6 @@ return {
     opts = {
       formatters_by_ft = {
         rust = { "rustfmt" },
-        typescriptreact = { "prettier" },
-        typescript = { "prettier" },
       },
     },
   },
