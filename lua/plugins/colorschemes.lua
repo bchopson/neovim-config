@@ -27,7 +27,7 @@ return {
           handle:close()
           -- If result is empty, system is using light theme
           if result == "" then
-            colorscheme = "catppuccin-latte"
+            colorscheme = "Kanagawa-lotus"
           end
         end
       end

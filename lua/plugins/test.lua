@@ -17,25 +17,8 @@ return {
       if jit.os ~= "Windows" then
         vim.g["test#python#pytest#executable"] = "mise exec -- pytest"
       end
+      vim.g["test#strategy"] = "neovim"
+      vim.g["test#neovim#term_position"] = "botright " .. math.floor(vim.o.lines * 0.4)
     end,
-    dependencies = {
-      {
-        "preservim/vimux",
-        enabled = function()
-          return jit.os ~= "Windows"
-        end,
-        keys = {
-          { "<leader>tq", ":VimuxCloseRunner<CR>", desc = "Close Test Pane" },
-        },
-        config = function()
-          if jit.os ~= "Windows" then
-            vim.g["test#strategy"] = "vimux"
-          else
-            vim.g["test#strategy"] = "neovim"
-          end
-          vim.g.VimuxHeight = "40%"
-        end,
-      },
-    },
   },
 }

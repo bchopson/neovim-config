@@ -4,7 +4,13 @@ require("which-key").add({
 return {
   {
     "augmentcode/augment.vim",
+    branch = "prerelease",
     lazy = false,
+    -- disable tab mapping
+    init = function()
+      vim.keymap.set("i", "<C-J>", "<cmd>call augment#Accept()<CR>", { noremap = true })
+      vim.g.augment_disable_tab_mapping = true
+    end,
     keys = {
       { "<leader>zc", ":Augment chat<CR>", desc = "Augment Chat", mode = { "n" } },
       { "<leader>zc", ":'<'>Augment chat<CR>", desc = "Augment Chat", mode = { "v" } },
@@ -33,4 +39,22 @@ return {
     },
   },
   { "AndrewRadev/linediff.vim" },
+  {
+    "akinsho/bufferline.nvim",
+    opts = {
+      options = {
+        custom_filter = function(buf_number, buf_numbers)
+          local name = vim.fn.bufname(buf_number)
+          if name:match("^term://") then
+            return false
+          end
+          if name:match("AugmentChatHistory") then
+            return false
+          end
+
+          return true
+        end,
+      },
+    },
+  },
 }

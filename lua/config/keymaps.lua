@@ -15,6 +15,8 @@ end
 
 map("i", "kk", "<esc>", { silent = true })
 map("i", "jj", "<esc>", { silent = true })
+map("t", "kk", "<C-\\><C-N>", { desc = "Exit terminal mode" })
+map("t", "jj", "<C-\\><C-N>", { desc = "Exit terminal mode" })
 map("n", "<leader>h", "<C-W>s", { desc = "Split window horizontal" })
 map("n", "<leader>v", "<C-W>v", { desc = "Split window vertical" })
 map("n", "<leader>q", ":q<CR>", { desc = "Close window" })
