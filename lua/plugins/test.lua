@@ -6,6 +6,7 @@ return {
     "vim-test/vim-test",
     keys = {
       { "<leader>tn", ":TestNearest<CR>", desc = "Test Nearest" },
+      { "<leader>tv", ":TestNearest -vv<CR>", desc = "Test Nearest Verbose" },
       { "<leader>tr", ":TestLast<CR>", desc = "Test Last" },
       { "<leader>tc", ":TestClass<CR>", desc = "Test Class" },
       { "<leader>tf", ":TestFile<CR>", desc = "Test File" },

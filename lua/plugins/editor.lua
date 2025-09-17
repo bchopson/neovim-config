@@ -19,7 +19,7 @@ return {
     },
   },
   {
-    "echasnovski/mini.bracketed",
+    "nvim-mini/mini.bracketed",
     main = "mini.bracketed",
     config = true,
   },
