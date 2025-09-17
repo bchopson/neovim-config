@@ -6,7 +6,6 @@ return {
       { "<leader>gl", ":0Gclog<CR>", desc = "0Gclog" },
       { "<leader>gd", ":Gdiff<CR>", desc = "Gdiff" },
       { "<leader>gb", ":Git blame<CR>", desc = "G blame" },
-      { "<leader>gs", ":G status<CR>", desc = "G status" },
       { "<leader>gc", ":G commit -v<CR>", desc = "G commit" },
       { "<leader>gr", ":Gread<CR>", desc = "Gread" },
     },
