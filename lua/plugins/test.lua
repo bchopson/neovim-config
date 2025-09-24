@@ -18,8 +18,18 @@ return {
       if jit.os ~= "Windows" then
         vim.g["test#python#pytest#executable"] = "mise exec -- pytest"
       end
-      vim.g["test#strategy"] = "neovim"
-      vim.g["test#neovim#term_position"] = "botright " .. math.floor(vim.o.lines * 0.4)
+      vim.g["test#custom_strategies"] = {
+        snacks = function(cmd)
+          require("snacks").terminal(cmd, {
+            win = {
+              position = "bottom",
+              height = math.floor(vim.o.lines * 0.4),
+            },
+            auto_close = false,
+          })
+        end,
+      }
+      vim.g["test#strategy"] = "snacks"
     end,
   },
 }

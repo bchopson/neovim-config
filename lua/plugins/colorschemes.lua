@@ -15,9 +15,15 @@ return {
   { "vigoux/oak" },
   { "EdenEast/nightfox.nvim", opts = { options = { transparent = true, styles = { comments = "italic" } } } },
   {
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = { transparent = { bg = true, float = true }, bold_keywords = true },
+  },
+  {
     "LazyVim/LazyVim",
     opts = function()
-      local colorscheme = "kanagawa"
+      local colorscheme = "nordic"
 
       -- Check if on macOS and system theme is light
       if vim.fn.has("mac") == 1 then
@@ -27,7 +33,7 @@ return {
           handle:close()
           -- If result is empty, system is using light theme
           if result == "" then
-            colorscheme = "Kanagawa-lotus"
+            colorscheme = "kanagawa-lotus"
           end
         end
       end
