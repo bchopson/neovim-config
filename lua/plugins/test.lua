@@ -4,6 +4,7 @@ require("which-key").add({
 return {
   {
     "vim-test/vim-test",
+    dependencies = { "folke/snacks.nvim" },
     keys = {
       { "<leader>tn", ":TestNearest<CR>", desc = "Test Nearest" },
       { "<leader>tv", ":TestNearest -vv<CR>", desc = "Test Nearest Verbose" },
@@ -16,7 +17,7 @@ return {
     },
     config = function()
       if jit.os ~= "Windows" then
-        vim.g["test#python#pytest#executable"] = "mise exec -- pytest"
+        vim.g["test#python#pytest#executable"] = "uv run pytest"
       end
       vim.g["test#custom_strategies"] = {
         snacks = function(cmd)

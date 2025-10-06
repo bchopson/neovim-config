@@ -45,9 +45,6 @@ return {
       options = {
         custom_filter = function(buf_number, buf_numbers)
           local name = vim.fn.bufname(buf_number)
-          if name:match("^term://") then
-            return false
-          end
           if name:match("AugmentChatHistory") then
             return false
           end

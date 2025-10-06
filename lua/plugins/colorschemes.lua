@@ -7,7 +7,21 @@ return {
         palette = {
           samuraiRed = "#E46876",
         },
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none",
+            },
+          },
+        },
       },
+      overrides = function(_)
+        return {
+          NormalFloat = { bg = "none" },
+          FloatBorder = { bg = "none" },
+          FloatTitle = { bg = "none" },
+        }
+      end,
     },
   },
   { "savq/melange-nvim" },
@@ -21,9 +35,21 @@ return {
     opts = { transparent = { bg = true, float = true }, bold_keywords = true },
   },
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = { transparent_background = true, float = { transparent = true }, styles = { keywords = { "bold" } } },
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = { transparent = true, styles = { sidebars = "transparent", floats = "transparent" } },
+  },
+  {
     "LazyVim/LazyVim",
     opts = function()
-      local colorscheme = "nordic"
+      local colorscheme = "kanagawa"
 
       -- Check if on macOS and system theme is light
       if vim.fn.has("mac") == 1 then
