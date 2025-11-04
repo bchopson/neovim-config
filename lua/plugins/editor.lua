@@ -10,12 +10,32 @@ return {
     init = function()
       vim.keymap.set("i", "<C-J>", "<cmd>call augment#Accept()<CR>", { noremap = true })
       vim.g.augment_disable_tab_mapping = true
+      vim.g.augment_node_command = vim.g.node_host_prog
     end,
     keys = {
       { "<leader>zc", ":Augment chat<CR>", desc = "Augment Chat", mode = { "n" } },
       { "<leader>zc", ":'<'>Augment chat<CR>", desc = "Augment Chat", mode = { "v" } },
       { "<leader>zz", ":Augment chat-toggle<CR>", desc = "Toggle Augment Chat" },
       { "<leader>zn", ":Augment chat-new<CR>", desc = "New Augment Chat", mode = { "v", "n" } },
+    },
+  },
+  {
+    "folke/sidekick.nvim",
+    opts = {
+      cli = {
+        tools = {
+          auggie = {
+            cmd = { "auggie" },
+          },
+        },
+        mux = {
+          enabled = true,
+          backend = "tmux",
+        },
+      },
+      nes = {
+        enabled = false,
+      },
     },
   },
   {

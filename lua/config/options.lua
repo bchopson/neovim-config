@@ -3,7 +3,8 @@
 -- Add any additional options here
 
 vim.g.mapleader = ","
-vim.g.maplocalleader = ","
+vim.g.maplocalleader = "\\"
+vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 if jit.os == "Windows" then
   vim.g.python_host_prog = [[C:\Users\benjamin\scoop\apps\python\current\python]]
   vim.g.python3_host_prog = [[C:\Users\benjamin\scoop\apps\python\current\python]]
