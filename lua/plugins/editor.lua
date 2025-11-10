@@ -20,22 +20,24 @@ return {
     },
   },
   {
-    "folke/sidekick.nvim",
+    "olimorris/codecompanion.nvim",
     opts = {
-      cli = {
-        tools = {
-          auggie = {
-            cmd = { "auggie" },
-          },
-        },
-        mux = {
-          enabled = true,
-          backend = "tmux",
+      strategies = {
+        chat = {
+          adapter = "auggie_cli",
         },
       },
-      nes = {
-        enabled = false,
+      extensions = {
+        spinner = {},
       },
+    },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "franco-ruggeri/codecompanion-spinner.nvim",
+    },
+    keys = {
+      { "<leader>ac", ":CodeCompanionChat Toggle<CR>", desc = "Code Companion toggle chat", mode = { "n" } },
+      { "<leader>av", ":CodeCompanionChat Add<CR>", desc = "Code Companion add visual selection", mode = { "v" } },
     },
   },
   {
