@@ -1,6 +1,9 @@
 require("which-key").add({
   { "<leader>z", group = "ai" },
 })
+require("which-key").add({
+  { "<leader>a", group = "codecompanion" },
+})
 return {
   {
     "augmentcode/augment.vim",
