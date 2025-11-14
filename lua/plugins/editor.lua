@@ -24,6 +24,7 @@ return {
   },
   {
     "olimorris/codecompanion.nvim",
+    lazy = false,
     opts = {
       strategies = {
         chat = {
