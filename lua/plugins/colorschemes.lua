@@ -24,6 +24,15 @@ return {
       end,
     },
   },
+  {
+    "webhooked/kanso.nvim",
+    opts = {
+      transparent = true,
+      foreground = {
+        dark = "saturated",
+      },
+    },
+  },
   { "savq/melange-nvim" },
   { "miikanissi/modus-themes.nvim" },
   { "vigoux/oak" },
