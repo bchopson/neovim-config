@@ -7,6 +7,8 @@ return {
       servers = {
         emmet_language_server = {},
         typos_lsp = {},
+        terraformls = {},
+        phpactor = {},
       },
     },
   },
@@ -15,6 +17,7 @@ return {
     opts = {
       formatters_by_ft = {
         rust = { "rustfmt" },
+        terraform = { "hclfmt" },
       },
     },
   },
