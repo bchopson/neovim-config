@@ -1,8 +1,7 @@
 return {
   {
-    "nvim-mini/mini.pairs",
-    opts = {
-      modes = { command = false },
-    },
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true,
   },
 }

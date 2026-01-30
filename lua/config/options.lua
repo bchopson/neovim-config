@@ -13,6 +13,7 @@ else
   -- mise is Mac/Linux only at present
   vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 end
+vim.g.minipairs_disable = true
 
 opt = vim.opt
 
