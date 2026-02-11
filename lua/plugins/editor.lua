@@ -5,7 +5,8 @@ return {
   {
     "augmentcode/augment.vim",
     branch = "prerelease",
-    lazy = false,
+    cond = false,
+    lazy = true,
     -- disable tab mapping
     init = function()
       vim.keymap.set("i", "<C-J>", "<cmd>call augment#Accept()<CR>", { noremap = true })
