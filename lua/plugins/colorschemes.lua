@@ -56,9 +56,18 @@ return {
     opts = { transparent = true, styles = { sidebars = "transparent", floats = "transparent" } },
   },
   {
+    "vague-theme/vague.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+      style = { keywords = "italic", builtin_variables = "italic", conditionals = "italic" },
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = function()
-      local colorscheme = "kanagawa"
+      local colorscheme = "vague"
 
       -- Check if on macOS and system theme is light
       if vim.fn.has("mac") == 1 then

@@ -26,3 +26,8 @@ opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevelstart = 99
 opt.guifont = { "JetBrainsMonoNL Nerd Font", ":h9" }
 opt.clipboard = ""
+opt.list = true
+opt.listchars = {
+  lead = "·",
+  trail = "·",
+}
