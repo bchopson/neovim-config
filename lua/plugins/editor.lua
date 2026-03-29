@@ -46,7 +46,7 @@ return {
         },
       },
       nes = {
-        enabled = false,
+        enabled = true,
       },
     },
   },
@@ -71,19 +71,4 @@ return {
     },
   },
   { "AndrewRadev/linediff.vim" },
-  {
-    "akinsho/bufferline.nvim",
-    opts = {
-      options = {
-        custom_filter = function(buf_number, buf_numbers)
-          local name = vim.fn.bufname(buf_number)
-          if name:match("AugmentChatHistory") then
-            return false
-          end
-
-          return true
-        end,
-      },
-    },
-  },
 }
