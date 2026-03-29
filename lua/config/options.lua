@@ -30,4 +30,6 @@ opt.list = true
 opt.listchars = {
   lead = "·",
   trail = "·",
+  tab = ">-",
 }
+vim.g.lazyvim_python_lsp = "ty"

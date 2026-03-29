@@ -3,25 +3,10 @@ require("which-key").add({
 })
 return {
   {
-    "augmentcode/augment.vim",
-    branch = "prerelease",
-    cond = false,
-    lazy = true,
-    -- disable tab mapping
-    init = function()
-      vim.keymap.set("i", "<C-J>", "<cmd>call augment#Accept()<CR>", { noremap = true })
-      vim.g.augment_disable_tab_mapping = true
-      vim.g.augment_node_command = vim.g.node_host_prog
-    end,
-  },
-  {
     "folke/sidekick.nvim",
     opts = {
       cli = {
         tools = {
-          codex = {
-            cmd = { "codex" },
-          },
           auggie = {
             cmd = { "auggie" },
             -- Customize how Sidekick formats messages for Auggie.
