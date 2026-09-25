@@ -19,6 +19,10 @@ return {
     "tommcdo/vim-fubitive",
   },
   {
+    "dlyongemallo/diffview.nvim",
+    version = "*",
+  },
+  {
     "pwntester/octo.nvim",
     opts = {
       suppress_missing_scope = {
